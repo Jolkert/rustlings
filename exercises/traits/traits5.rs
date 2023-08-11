@@ -10,15 +10,15 @@
 // I AM NOT DONE
 
 pub trait SomeTrait {
-    fn some_function(&self) -> bool {
-        true
-    }
+	fn some_function(&self) -> bool {
+		true
+	}
 }
 
 pub trait OtherTrait {
-    fn other_function(&self) -> bool {
-        true
-    }
+	fn other_function(&self) -> bool {
+		true
+	}
 }
 
 struct SomeStruct {}
@@ -31,10 +31,10 @@ impl OtherTrait for OtherStruct {}
 
 // YOU MAY ONLY CHANGE THE NEXT LINE
 fn some_func(item: ??) -> bool {
-    item.some_function() && item.other_function()
+	item.some_function() && item.other_function()
 }
 
 fn main() {
-    some_func(SomeStruct {});
-    some_func(OtherStruct {});
+	some_func(SomeStruct {});
+	some_func(OtherStruct {});
 }
